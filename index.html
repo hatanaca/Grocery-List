@@ -6,7 +6,17 @@
     <title>Grocery List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+	<div class="container">
+		<h2>Grocery List</h2>
+		<div class="add-container">
+			<input type="text" id="item" placeholder="Add an item" onkeypress="handleKeyPress(event)">
+			<button onclick="addItem()">Add</button>
+		</div>
+		<ul id="list"></ul>
+		<button class="clear-button" onclick="clearList()">Clear All</button>
+	</div>
     <script src="script.js"></script>
 </body>
 </html>
